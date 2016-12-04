@@ -1,34 +1,33 @@
 angular.module('assessment')
 .config(function($stateProvider, $urlRouterProvider){
 
-  var siteprefix = '/angular-assessment';
   $stateProvider
     .state('home', {
-      url : siteprefix + '/',
+      url : '/angular-assessment/',
       templateUrl: './../views/home.html',
       controller: 'mainCtrl'
     })
     .state('about', {
-      url : siteprefix + '/about',
+      url : '/angular-assessment/about',
       templateUrl: './../views/about.html',
       controller: 'mainCtrl'
     })
     .state('blog', {
-      url : siteprefix + '/blog',
+      url : '/angular-assessment/blog',
       templateUrl: './../views/blog.html',
       controller: 'mainCtrl'
     })
     .state('shop', {
-      url : siteprefix + '/shop',
+      url : '/angular-assessment/shop',
       templateUrl: './../views/shop.html',
       controller: 'mainCtrl'
     })
     .state('details', {
-      url : siteprefix + '/detail/:id',
+      url : '/angular-assessment/detail/:id',
       templateUrl: './../views/product-details.html',
       controller: 'mainCtrl'
     });
 
-  $urlRouterProvider.otherwise('/');
+  $urlRouterProvider.otherwise('/angular-assessment/');
 
 });
