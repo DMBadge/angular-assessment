@@ -4,27 +4,27 @@ angular.module('assessment')
   $stateProvider
     .state('home', {
       url : '/',
-      templateUrl: './../views/home.html',
+      templateUrl: '../views/home.html',
       controller: 'mainCtrl'
     })
     .state('about', {
       url : '/about',
-      templateUrl: './../views/about.html',
+      templateUrl: '../views/about.html',
       controller: 'mainCtrl'
     })
     .state('blog', {
       url : '/blog',
-      templateUrl: './../views/blog.html',
+      templateUrl: '../views/blog.html',
       controller: 'mainCtrl'
     })
     .state('shop', {
       url : '/shop',
-      templateUrl: './../views/shop.html',
+      templateUrl: '../views/shop.html',
       controller: 'mainCtrl'
     })
     .state('details', {
       url : '/detail/:id',
-      templateUrl: './../views/product-details.html',
+      templateUrl: '../views/product-details.html',
       controller: 'mainCtrl'
     });
 
