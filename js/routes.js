@@ -3,31 +3,31 @@ angular.module('assessment')
 
   $stateProvider
     .state('home', {
-      url : '/angular-assessment/',
-      templateUrl: './../views/home.html',
+      url : '/',
+      templateUrl: '/angular-assessment/views/home.html',
       controller: 'mainCtrl'
     })
     .state('about', {
-      url : '/angular-assessment/about',
-      templateUrl: './../views/about.html',
+      url : '/about',
+      templateUrl: '/angular-assessment/views/about.html',
       controller: 'mainCtrl'
     })
     .state('blog', {
-      url : '/angular-assessment/blog',
-      templateUrl: './../views/blog.html',
+      url : '/blog',
+      templateUrl: '/angular-assessment/views/blog.html',
       controller: 'mainCtrl'
     })
     .state('shop', {
-      url : '/angular-assessment/shop',
-      templateUrl: './../views/shop.html',
+      url : '/shop',
+      templateUrl: '/angular-assessment/views/shop.html',
       controller: 'mainCtrl'
     })
     .state('details', {
-      url : '/angular-assessment/detail/:id',
-      templateUrl: './../views/product-details.html',
+      url : '/detail/:id',
+      templateUrl: '/angular-assessment/views/product-details.html',
       controller: 'mainCtrl'
     });
 
-  $urlRouterProvider.otherwise('/angular-assessment/');
+  $urlRouterProvider.otherwise('/');
 
 });
