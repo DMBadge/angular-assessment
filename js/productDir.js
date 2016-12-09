@@ -2,7 +2,7 @@ angular.module('assessment')
 .directive('product', function(){
   return {
     restrict: 'E',
-    templateUrl: './../views/product-tmpl.html',
+    templateUrl: '/angular-assessment/views/product-tmpl.html',
     scope: {
       data: '='
     },
